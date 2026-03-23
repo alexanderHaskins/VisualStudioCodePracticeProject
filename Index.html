@@ -4,21 +4,24 @@
 <head>
     <script src="Index.js" defer></script>
 </head>
-<body>
 
-    
+<body onload="setUp()">
+
+
 
     <h1>Hello, and welcome to my number guessing game!</h1>
-    <p>I am thinking of a number between 1 and 100.
-        Guess the number within 20 guesses to win!
-        If you guess wrong, I will tell you whether you are higher or lower then the actual number</p>
-    <form>
-        <label for="guess">Input Guess:</label>
-        <input type="text" id="guess" name="guess">
-        <input type="submit" value="Submit">
-    </form>
-    <div id="div1"></div>
-    <p id="writeTo"></p>
+
+    <div id="div1">
+        <p>I am thinking of a number between 1 and 100.
+            Guess the number within 20 guesses to win!
+            If you guess wrong, I will tell you whether you are higher or lower then the actual number</p>
+        <form>
+            <label for="guess">Input Guess:</label>
+            <input type="text" id="guess" name="guess">
+             <button type="button" id="submit">Submit</button> 
+        </form>
+        <p id="p1"></p>
+    </div>
 </body>
 
 </html>
